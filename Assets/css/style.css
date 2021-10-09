@@ -1,0 +1,187 @@
+
+body {
+  background-color: rgb(241, 248, 255);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  
+  background-color:dimgrey;
+  color:rgb(52, 182, 233);  
+
+}
+
+header h1 {
+    background-color:rgb(52, 182, 233);
+    color:dimgrey;
+    font-size:48px;
+    padding: 12px;
+}
+
+/*top navigation area to the right, no decoration and no padding*/
+header nav {
+  float: right;
+  text-decoration: none;
+  margin:0px;
+  padding:0px;
+}
+
+header ul {
+  list-style-type: none;
+  margin-right: 15px;
+}
+
+/* nav links margin, no underline for links aligned horizontally */
+header ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 25px;
+  font-size: larger;
+  font-weight: bold;
+
+}
+
+header a{
+  color:skyblue;
+  white-space: nowrap;  
+  text-decoration:none;
+  vertical-align: bottom;
+}
+
+/* hover over links changes their color */
+header a:hover {
+  color:rgb(52, 182, 233);
+}
+
+.subHeader{
+  height:200px;
+  margin-bottom:5px;
+ 
+}
+
+.subHeader div{
+  background-color:rgb(52, 182, 233);
+  height: 40px;
+  width:fit-content;
+  padding-left:5px;
+  padding-right:5px;
+  margin-right: 25px;
+  font-size: 28px;
+  position: relative;
+  top: 130px;
+  right: 0;
+  float: right ;
+}
+
+/* all sections have a left( titlesection and right(contentsection) areas
+  all sections have a margin at the bottom to separate them*/
+.section {
+  display:flex;
+  height:100%;
+  margin-bottom:10px;
+  
+}
+
+/* left area is the titlesection, big text, aligned to the right of the container*/
+.titleSection {
+  flex: 10%;
+  padding-right: 5px;
+  font-size:20px;
+  text-align:right;
+  min-width:130px;
+  word-wrap: normal;
+
+}
+
+.aboutSection {
+  font-size: larger;
+ 
+}
+
+.contentSection {
+  flex:90%;
+  padding-left:5px;
+  align-content:center;
+  min-height: 120px;
+  border-left: 4px solid rgb(58, 58, 58);
+}
+
+/* links in the projects section not underlined */
+.prjs a {
+  text-decoration:none;
+}
+
+.prjs {
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+/* main projects are 100 wide to the container and taller */
+.mainPrj {
+  width:100%;
+  align-items:center;
+  background-size: contain;
+  height:350px;
+  border: 5px solid rgb(52, 182, 233);
+  margin: 10px;
+}
+
+.mainPrj:hover {
+  opacity: 0.85;
+}
+
+.mainPrj .innerWrap{
+  top: 190px;
+}
+
+/*secondary projects are 50% wide and less tall than main projects*/
+.secPrj{
+  width: 47%;
+  background-size: contain;
+  height:225px;
+  border: 5px solid rgb(52, 182, 233);
+  margin: 10px;
+}
+
+
+.secPrj:hover {
+  opacity: 0.85;
+}
+
+/*name of projects to the right in bold*/
+.namePrj{
+  color:rgb(97, 97, 97);
+  font-size:20px ;
+  font-weight: bold;
+}
+
+.detailPrj{
+   color:rgb(61, 61, 61);
+   font-size: 14px;
+   margin-top:3px;
+}
+
+/*inner wrap is a container inside the project areas to the left that show the project name
+and some details */
+.innerWrap{
+  background-color:rgb(52, 182, 233);
+  max-width:250px;
+  height: 70px;
+  padding-left:5px;
+  position: relative;
+  top: 120px;
+}
+
+.contactSection.contentSection *{
+  font-size:28px;
+  min-width: 310px;
+  margin-left:65px;
+  margin-top: 15px;
+  padding-top:35px;
+  align-items:center;
+  color:black;
+  text-decoration:underline;
+}
